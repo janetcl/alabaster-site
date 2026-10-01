@@ -3,7 +3,7 @@ title: Sermons · Alabaster Group
 description: Watch Sunday services on YouTube and listen to past sermons on Spotify, Apple Podcasts and PodBean.
 header: solid
 ---
-<section style="padding-top: 0;">
+<section class="top-space">
 {{> sermons-split}}
 </section>
 
@@ -13,7 +13,7 @@ header: solid
 <p>Our past sermons are available for listening as podcasts on Spotify, Apple Podcasts, and PodBean. Every New York service is also streamed live on YouTube.</p>
 </div>
 <div class="stack" style="border-bottom: 1px solid var(--line);">
-{{#each sermons.all}}<a class="episode" href="{{this.url}}" style="padding: 20px 0;"><span class="episode__play">{{> play}}</span><span class="episode__title" style="font-size: 24px;">{{this.title}}</span><span class="episode__date">{{this.long}}</span></a>{{/each}}
+{{#each sermons.all}}<a class="episode" href="{{this.url}}" style="padding: 20px 0;"><span class="episode__play">{{> play}}</span><span class="episode__title">{{this.title}}</span><span class="episode__date">{{this.long}}</span></a>{{/each}}
 </div>
 <div class="btn-row" style="margin-top: 40px;">
 <a class="btn btn--ink" href="{{site.youtube}}">YouTube</a>

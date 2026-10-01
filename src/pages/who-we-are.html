@@ -32,11 +32,9 @@ description: Alabaster Group exists to glorify Jesus Christ and to work towards 
 <div class="people">
 {{#each members}}<article class="person">
 <div class="person__img"><img src="{{this.img}}" alt="Portrait of {{this.name}}" loading="lazy"></div>
-<div class="stack gap-s">
-<h3>{{this.name}}</h3>
-<span class="person__role">{{this.role}}</span>
-<dl>{{this.facts}}</dl>
-</div>
+<div class="person__name"><h3 class="h4">{{this.name}}</h3><span class="person__role">{{this.role}}</span></div>
+<span class="person__key">{{this.key}}</span>
+<details><summary>More about {{this.first}}</summary><dl>{{this.more}}</dl></details>
 </article>{{/each}}
 </div>
 </section>

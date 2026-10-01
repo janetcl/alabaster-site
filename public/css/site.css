@@ -394,3 +394,131 @@ p { margin: 0; }
 .site-footer .wrap { border-top: 0; padding-top: 0; }
 .footer-grid { border-top: 1px solid rgba(247, 246, 243, 0.12); padding-top: 64px; }
 @media (max-width: 900px) { .footer-grid { padding-top: 44px; } }
+
+/* =========================================================
+   Type system v2: one scale for every page.
+   Fall Retreat (flyer style) is the only exception.
+   ========================================================= */
+:root {
+  --fs-h1: clamp(52px, 7.6vw, 112px);   /* page titles (hero) */
+  --fs-h2: clamp(38px, 4.4vw, 62px);    /* section titles */
+  --fs-h3: clamp(30px, 3vw, 44px);      /* card titles: New York, Boston */
+  --fs-h4: 26px;                        /* item titles: people, principles, schools */
+  --fs-h5: 20px;                        /* list rows: sermons, FAQs */
+  --fs-lede: 18px;                      /* intro paragraphs */
+  --fs-body: 16px;                      /* body copy */
+  --fs-small: 14.5px;                   /* captions, meta */
+  --fs-label: 12px;                     /* eyebrows, buttons (caps) */
+}
+h1 { font-size: var(--fs-h1); }
+h2 { font-size: var(--fs-h2); }
+h3 { font-size: var(--fs-h3); }
+.h4 { font-family: var(--serif); font-variation-settings: 'SOFT' 100, 'WONK' 1; font-weight: 400; font-size: var(--fs-h4); line-height: 1.15; letter-spacing: -0.015em; margin: 0; }
+.h5 { font-family: var(--serif); font-variation-settings: 'SOFT' 100; font-weight: 400; font-size: var(--fs-h5); line-height: 1.3; margin: 0; }
+.lede, .hero__body p { font-size: var(--fs-lede); line-height: 1.65; }
+body, .prose { font-size: var(--fs-body); }
+.prose { font-size: 17px; }
+.small, .head-row > p, .card__body .muted, .tile p, .give-card p, .give-card dl { font-size: var(--fs-small); line-height: 1.65; }
+.eyebrow, .link-u, .btn, .nav { font-size: var(--fs-label); }
+.card__body h3 { font-size: var(--fs-h3); }
+.sermons__title { font-size: 32px; }
+.episode__title, .faq summary { font-size: var(--fs-h5); }
+.tile h3, .person h3, .contact-card h3, .give-card h3, .included figcaption h3 { font-size: var(--fs-h4); }
+.quote-lg { font-size: clamp(26px, 2.8vw, 38px); line-height: 1.25; }
+
+/* ---------- Hero: taller option + softer fade ---------- */
+.hero--tall { min-height: 860px; }
+.hero__fade { height: 220px; background: linear-gradient(180deg, rgba(247, 246, 243, 0) 0%, rgba(247, 246, 243, 0.35) 45%, rgba(247, 246, 243, 0.85) 80%, var(--paper) 100%); }
+.hero--page .hero__shade { background:
+  linear-gradient(180deg, rgba(29, 30, 44, 0.45) 0%, rgba(29, 30, 44, 0) 24%),
+  linear-gradient(90deg, rgba(29, 30, 44, 0.7) 0%, rgba(29, 30, 44, 0.25) 55%, rgba(29, 30, 44, 0) 100%); }
+.hero--page .hero__body { padding-bottom: 170px; }
+
+/* ---------- Section spacing helpers ---------- */
+.after-sermons { padding-bottom: 120px; }
+.top-space { padding-top: 72px; }
+
+/* ---------- Retreat plug (small, flyer style) ---------- */
+.retreat-plug {
+  display: grid; grid-template-columns: auto 1fr auto; gap: 40px; align-items: center;
+  background: var(--ink); color: var(--on-dark); padding: 36px 44px; text-decoration: none; position: relative;
+}
+.retreat-plug:hover { opacity: 0.95; }
+.retreat-plug::before, .retreat-plug::after { content: ''; position: absolute; width: 28px; height: 28px; border: 0 solid var(--orange); }
+.retreat-plug::before { right: 10px; top: 10px; border-top-width: 4px; border-right-width: 4px; }
+.retreat-plug::after { left: 10px; bottom: 10px; border-bottom-width: 4px; border-left-width: 4px; }
+.retreat-plug__title { font-family: var(--condensed); font-size: 64px; line-height: 0.86; text-transform: uppercase; color: var(--orange); }
+.retreat-plug__meta { display: flex; flex-direction: column; gap: 8px; }
+.retreat-plug__meta .when { font-family: var(--condensed); font-size: 26px; text-transform: uppercase; letter-spacing: 0.01em; }
+.retreat-plug__meta .mono { font-family: var(--mono); font-size: 12px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--on-dark-muted); }
+
+/* ---------- Campus contacts ---------- */
+.campus-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr)); gap: 20px; }
+.campus { background: var(--white); display: flex; flex-direction: column; }
+.campus__head { display: flex; justify-content: space-between; align-items: baseline; padding: 24px 26px 18px; border-bottom: 1px solid var(--line); }
+.campus__head .eyebrow { font-size: 11px; }
+.campus__people { display: flex; flex-direction: column; padding: 6px 26px 14px; }
+.campus .contact-person { display: grid; grid-template-columns: 64px 1fr; gap: 16px; align-items: center; padding: 14px 0; }
+.campus .contact-person + .contact-person { border-top: 1px solid var(--line); }
+.campus .contact-person img { width: 64px; height: 80px; object-fit: cover; }
+.campus .contact-person span { display: flex; flex-direction: column; gap: 2px; font-size: var(--fs-small); }
+.campus .contact-person strong { font-family: var(--serif); font-variation-settings: 'SOFT' 100; font-weight: 400; font-size: 19px; }
+.campus .contact-person .muted { font-size: 13px; }
+.campus .contact-person a { font-size: 13.5px; color: var(--ink); text-decoration: underline; text-decoration-color: rgba(29, 30, 44, 0.3); text-underline-offset: 3px; }
+.campus--other { background: transparent; border: 1px dashed rgba(29, 30, 44, 0.3); }
+
+/* ---------- Members ---------- */
+.people { grid-template-columns: repeat(auto-fill, minmax(min(240px, 100%), 1fr)); gap: 48px 24px; }
+.person { gap: 16px; }
+.person__img img { filter: grayscale(1) contrast(1.04); transition: filter 0.3s; }
+.person:hover .person__img img { filter: none; }
+.person__name { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; border-top: 1.5px solid var(--ink); padding-top: 12px; }
+.person__key { font-size: var(--fs-small); color: var(--muted); }
+.person details summary { cursor: pointer; list-style: none; font-size: 11.5px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; display: inline-flex; gap: 8px; border-bottom: 1.5px solid rgba(29, 30, 44, 0.3); padding-bottom: 3px; }
+.person details summary::-webkit-details-marker { display: none; }
+.person details summary::after { content: '+'; }
+.person details[open] summary::after { content: '–'; }
+.person details dl { margin-top: 12px; }
+.leaders { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(240px, 100%), 1fr)); gap: 48px 24px; margin-bottom: 72px; }
+
+/* ---------- What we believe ---------- */
+.subnav { position: sticky; top: 0; z-index: 5; background: rgba(247, 246, 243, 0.94); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+.subnav .wrap { display: flex; gap: 32px; overflow-x: auto; height: 60px; align-items: center; white-space: nowrap; }
+.subnav a { font-size: var(--fs-label); font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; text-decoration: none; color: var(--label); }
+.subnav a span { color: var(--ink); margin-right: 8px; }
+.faith { list-style: none; margin: 0; padding: 0; counter-reset: f; }
+.faith li { display: grid; grid-template-columns: 72px 1fr; gap: 20px; padding: 28px 0; border-top: 1px solid var(--line); }
+.faith li:last-child { border-bottom: 1px solid var(--line); }
+.faith .num { font-family: var(--serif); font-size: 34px; line-height: 1; color: var(--label); }
+.faith p { font-size: 18px; line-height: 1.65; }
+.principles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(460px, 100%), 1fr)); column-gap: 72px; }
+.principle { display: grid; grid-template-columns: 64px 1fr; gap: 20px; padding: 30px 0; border-top: 1px solid rgba(247, 246, 243, 0.16); }
+.principle .num { font-family: var(--serif); font-size: 30px; line-height: 1; color: var(--accent-dark); }
+.principle p { font-size: var(--fs-small); line-height: 1.7; color: var(--on-dark-muted); margin-top: 8px; }
+.verses { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr)); gap: 20px; }
+.verse { background: var(--white); padding: 36px 34px; display: flex; flex-direction: column; gap: 20px; }
+.verse blockquote { margin: 0; font-family: var(--serif); font-variation-settings: 'SOFT' 100; font-size: 19px; line-height: 1.6; }
+.verse cite { font-style: normal; margin-top: auto; padding-top: 16px; border-top: 1.5px solid var(--ink); font-size: var(--fs-label); font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; }
+.cream { background: var(--cream); position: relative; overflow: hidden; }
+.cream .rings-bg { position: absolute; width: 900px; height: 900px; right: -320px; top: -380px; opacity: 0.55; --rw: 1.2; }
+
+/* ---------- Events ---------- */
+.event-card { background: var(--white); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); }
+.event-card__img { min-height: 260px; position: relative; overflow: hidden; }
+.event-card__img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.event-card__body { padding: 36px 40px; display: flex; flex-direction: column; gap: 14px; }
+.chapter-block { padding-block: 88px; border-top: 1px solid var(--line); }
+
+@media (max-width: 900px) {
+  .hero--tall { min-height: 720px; }
+  .hero--page .hero__body { padding-bottom: 130px; }
+  .retreat-plug { grid-template-columns: 1fr; gap: 18px; padding: 30px 26px; }
+  .retreat-plug__title { font-size: 52px; }
+  .faith li, .principle { grid-template-columns: 48px 1fr; gap: 14px; }
+  .after-sermons { padding-bottom: 72px; }
+  .chapter-block { padding-block: 64px; }
+}
+.hero:not(.hero--page) .hero__body { padding-bottom: 190px; }
+.time-num { font-family: var(--serif); font-variation-settings: "SOFT" 100; font-size: 34px; line-height: 1; min-width: 120px; }
+.chapter-block { border-top: 0; position: relative; }
+.chapter-block::before { content: ''; position: absolute; top: 0; left: var(--gutter); right: var(--gutter); border-top: 1px solid var(--line); }
