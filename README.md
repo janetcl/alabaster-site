@@ -33,7 +33,21 @@ off) are a one-line change in `src/data/site.json`.
   feed; `.github/workflows/update-sermons.yml` runs it twice a week and
   commits any change, which triggers a redeploy.
 
-## Hosting (Cloudflare Pages, free)
+## Before every push: test plan
+
+    python3 scripts/test_plan.py
+
+Builds the site, checks for broken template tags and missing files, and saves
+desktop and phone screenshots of every page plus a checklist to
+`docs/test-plan/`. Commit those files with your change so reviewers can see
+what it looks like.
+
+## Preview (GitHub Pages)
+
+Every push to `main` deploys to https://janetcl.github.io/alabaster-site/
+via `.github/workflows/pages.yml`.
+
+## Hosting the real alabaster.org (Cloudflare Pages, free)
 
 - Build command: `python3 build.py`
 - Output directory: `dist`

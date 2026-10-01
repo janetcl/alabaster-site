@@ -16,6 +16,7 @@ Template syntax:
   {{#each a.b}} {{this.x}} {{/each}}
 """
 import json
+import os
 import re
 import shutil
 from pathlib import Path
@@ -23,6 +24,8 @@ from pathlib import Path
 ROOT = Path(__file__).parent
 SRC = ROOT / "src"
 DIST = ROOT / "dist"
+# Set BASE_PATH=/alabaster-site when hosting under a sub-folder (GitHub Pages).
+BASE = os.environ.get("BASE_PATH", "").rstrip("/")
 
 
 def lookup(ctx, path):
@@ -92,6 +95,8 @@ def main():
         ctx["description"] = meta.get("description", "A church in New York City and Boston devoted to Jesus Christ.")
         ctx["content"] = render(body, ctx)
         html = render(layout, ctx)
+        if BASE:
+            html = re.sub(r'(href|src|content)="/(?!/)', rf'\1="{BASE}/', html)
         out = DIST / "index.html" if page.stem == "index" else DIST / page.stem / "index.html"
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(html)
