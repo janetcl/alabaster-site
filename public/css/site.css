@@ -522,3 +522,6 @@ body, .prose { font-size: var(--fs-body); }
 .time-num { font-family: var(--serif); font-variation-settings: "SOFT" 100; font-size: 34px; line-height: 1; min-width: 120px; }
 .chapter-block { border-top: 0; position: relative; }
 .chapter-block::before { content: ''; position: absolute; top: 0; left: var(--gutter); right: var(--gutter); border-top: 1px solid var(--line); }
+/* Subpage covers: one height for every page (taller than before, not full-screen). */
+.hero--page, .hero--tall { min-height: 740px; }
+@media (max-width: 900px) { .hero--page, .hero--tall { min-height: 580px; } }
