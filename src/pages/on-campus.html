@@ -1,0 +1,41 @@
+---
+title: Campus Ministry · Alabaster Group
+description: Prayer meetings, student retreats, discipleship and campus contacts at Brown, Columbia, Cornell, Dartmouth, Harvard, MIT, NYU, Princeton, Penn and Yale.
+---
+<section class="hero hero--page">
+<img class="hero__img" src="/images/home/IMG_4380.webp" alt="Students on a sunlit campus lawn" style="object-position: center 60%;">
+<div class="hero__shade"></div>
+<div class="hero__fade"></div>
+<div class="wrap hero__body">
+<span class="eyebrow">Students</span>
+<h1>Campus <em>ministry</em></h1>
+<p>We hold prayer meetings, host retreats for students, offer discipleship, counseling, and prayer, and continually seek to expand the influence of the gospel on university campuses.</p>
+</div>
+</section>
+
+<section class="wrap section">
+<div class="head-row">
+<h2>Campus <em>contacts</em></h2>
+<p>Our members are committed to providing students with prayer at target universities, and some also host prayer meetings on campus. If you are a student, we welcome you to reach out.</p>
+</div>
+<div class="contacts">
+{{#each campuses}}<div class="contact-card"><h3>{{this.school}}</h3>{{this.html}}</div>{{/each}}
+</div>
+</section>
+
+<section>
+<div class="dark">
+<div class="wrap" style="padding-top: 120px;">
+<div class="split split--center">
+<div class="stack gap-m">
+<span class="eyebrow">Student retreats</span>
+<h2>A weekend to <em>encounter God.</em></h2>
+<p class="muted" style="font-size: 16.5px; line-height: 1.7;">During the school year, we host retreats for university students. These retreats are a weekend of musical worship, teaching, ministry, and fellowship where students can worship and encounter God.</p>
+<a class="link-u" href="/student-membership" style="align-self: flex-start;">Student membership</a>
+</div>
+<div style="aspect-ratio: 3 / 2; overflow: hidden;"><img src="/images/on-campus/unsplash-image-dGxOgeXAXm8.webp" alt="Students taking notes during a session" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy"></div>
+</div>
+</div>
+{{> retreat-feature}}
+</div>
+</section>

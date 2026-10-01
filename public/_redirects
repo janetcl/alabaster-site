@@ -1,0 +1,6 @@
+# Old Squarespace paths → new pages (Cloudflare Pages / Netlify format)
+/home      /                 301
+/church    /sunday-services  301
+/about     /who-we-are       301
+/podcast   /sermons          301
+/s/Student-Membership-Affirmation.pdf  /files/Student-Membership-Affirmation.pdf  301

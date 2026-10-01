@@ -1,0 +1,22 @@
+<div class="sermons">
+<div class="sermons__art">
+<svg class="grain" aria-hidden="true"><rect width="100%" height="100%" filter="url(#grain)"/></svg>
+<svg class="rings spin" viewBox="0 0 100 100" aria-hidden="true"><use href="#alab-rings"/></svg>
+<span class="eyebrow">Alabaster · Sermons</span>
+</div>
+<div class="sermons__body">
+<h2 style="margin-bottom: 10px;">Listen to <em>recent sermons</em></h2>
+<span class="eyebrow sermons__latest">Latest · {{sermons.latest.long}}</span>
+<h3 class="sermons__title">{{sermons.latest.title}}</h3>
+<div class="btn-row" style="gap: 10px; align-items: center;">
+<a class="btn btn--ink" style="height: 52px;" href="{{sermons.latest.url}}">{{> play}}Play</a>
+<a class="btn btn--outline btn--sm" href="{{site.spotify}}">Spotify</a>
+<a class="btn btn--outline btn--sm" href="{{site.apple_podcasts}}">Apple Podcasts</a>
+</div>
+<div class="stack" style="padding-top: 22px;">
+<span class="eyebrow" style="font-size: 11.5px; padding-bottom: 8px;">Earlier</span>
+{{#each sermons.earlier}}<a class="episode" href="{{this.url}}"><span class="episode__play">{{> play}}</span><span class="episode__title">{{this.title}}</span><span class="episode__date">{{this.date}}</span></a>{{/each}}
+<a class="link-u" href="/sermons" style="align-self: flex-start; margin-top: 16px;">All sermons · streamed live every Sunday on YouTube</a>
+</div>
+</div>
+</div>

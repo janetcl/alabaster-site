@@ -1,0 +1,42 @@
+{
+  "email": "hello@alab.org",
+  "giving_email": "support@alab.org",
+  "messenger": "https://m.me/alabgrp",
+  "youtube": "https://youtube.com/@AlabGrp",
+  "youtube_live": "https://youtube.com/@AlabGrp/live",
+  "instagram": "https://instagram.com/alabastergroup/",
+  "facebook": "https://facebook.com/alabgrp/",
+  "spotify": "https://open.spotify.com/show/4bcBS5S0xmoB0FNPHSwY8U",
+  "apple_podcasts": "https://podcasts.apple.com/us/podcast/alabaster-group/id1704492988",
+  "giving_url": "https://alabaster.churchcenter.com/giving?open-in-church-center-modal=true",
+  "mailing": "1441 Broadway Ste 5096, New York, NY 10018",
+  "nyc": {
+    "time": "10:30 AM",
+    "venue": "Executive Hotel Le Soleil",
+    "street": "38 W 36th St",
+    "address": "Executive Hotel Le Soleil, 38 W 36th St, New York, NY 10018",
+    "room": "C level, Bon Vivant Room",
+    "map": "https://maps.google.com/?q=38+W+36th+St+New+York+NY+10018"
+  },
+  "boston": {
+    "time": "5:00 PM",
+    "street": "129 Franklin St",
+    "address": "129 Franklin St, Cambridge, MA 02139",
+    "map": "https://maps.google.com/?q=129+Franklin+St+Cambridge+MA+02139"
+  },
+  "retreat": {
+    "name": "Fall Retreat 2026",
+    "dates": "Oct 16–18",
+    "place": "Orange, CT",
+    "deadline": "2026-10-01T23:59:00-04:00",
+    "deadlineText": "Register by Oct 1",
+    "register_url": "#register"
+  },
+  "announce": {
+    "show": true,
+    "label": "Fall Retreat 2026",
+    "text": "Oct 16–18 · Free for university students",
+    "cta": "Register",
+    "href": "/fr-26"
+  }
+}

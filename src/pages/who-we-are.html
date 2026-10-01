@@ -1,0 +1,42 @@
+---
+title: Who We Are · Alabaster Group
+description: Alabaster Group exists to glorify Jesus Christ and to work towards the expansion of the influence of his gospel. Meet some of our members.
+---
+<section class="hero hero--page">
+<img class="hero__img" src="/images/on-campus/unsplash-image-dGxOgeXAXm8.webp" alt="People seated with open notebooks during a teaching">
+<div class="hero__shade"></div>
+<div class="hero__fade"></div>
+<div class="wrap hero__body">
+<span class="eyebrow">About · Since 2011</span>
+<h1>Who <em>we are</em></h1>
+</div>
+</section>
+
+<section class="wrap section">
+<div class="split">
+<p class="quote-lg">Alabaster Group exists to glorify Jesus Christ and to work towards the expansion of the influence of his gospel in every place where our members live and work.</p>
+<div class="prose">
+<p>The ministry was established by the Holy Spirit through our founder in 2011 to be a ministry that prioritized genuine love for, pursuit of, and relationship with God himself.</p>
+<p>We believe that authentic faith in Jesus by a community of believers is evidenced by the operation of God’s power (1 Cor 4:20) and the fruit of his work in our lives. Thus, we aim to show, by good works, by demonstrations of God’s power, and by his love, the greatness of God’s glory and the truth of his gospel.</p>
+<p>Today, our work focus is centered around several different communities: university campuses and companies which employ our members. We invite you to visit us at any of our <a href="/sunday-services">Sunday services</a> or at a special service or other event. Additionally, if you are a university student, please join us <a href="/on-campus">on campus</a> or at a student retreat.</p>
+<div class="btn-row" style="margin-top: 8px;"><a class="btn btn--ink" href="/what-we-believe">What we believe</a><a class="btn btn--outline" href="/sunday-services">Visit on Sunday</a></div>
+</div>
+</div>
+</section>
+
+<section class="wrap" style="padding-bottom: 130px;">
+<div class="head-row">
+<h2>Meet our <em>members</em></h2>
+<p>We are pleased to share with you a brief introduction to some of our members who have guest-facing roles in our church. Many of our members are not profiled here, but they’re just as essential.</p>
+</div>
+<div class="people">
+{{#each members}}<article class="person">
+<div class="person__img"><img src="{{this.img}}" alt="Portrait of {{this.name}}" loading="lazy"></div>
+<div class="stack gap-s">
+<h3>{{this.name}}</h3>
+<span class="person__role">{{this.role}}</span>
+<dl>{{this.facts}}</dl>
+</div>
+</article>{{/each}}
+</div>
+</section>

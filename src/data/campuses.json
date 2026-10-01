@@ -1,0 +1,152 @@
+[
+ {
+  "school": "Brown",
+  "people": [
+   {
+    "name": "Alenette Jordan",
+    "year": "’21",
+    "email": "alenette@alab.org",
+    "img": "/images/on-campus/Alenette.webp"
+   },
+   {
+    "name": "Josiah Jordan",
+    "year": "’18",
+    "email": "josiah@alab.org",
+    "img": "/images/on-campus/Josiah.webp"
+   }
+  ],
+  "html": "<div class=\"contact-person\"><img src=\"/images/on-campus/Alenette.webp\" alt=\"Portrait of Alenette Jordan\" loading=\"lazy\"><span><strong>Alenette Jordan</strong> <span class=\"muted\">(’21)</span><a href=\"mailto:alenette@alab.org\">alenette@alab.org</a></span></div><div class=\"contact-person\"><img src=\"/images/on-campus/Josiah.webp\" alt=\"Portrait of Josiah Jordan\" loading=\"lazy\"><span><strong>Josiah Jordan</strong> <span class=\"muted\">(’18)</span><a href=\"mailto:josiah@alab.org\">josiah@alab.org</a></span></div>"
+ },
+ {
+  "school": "Columbia",
+  "people": [
+   {
+    "name": "Bethel Adiele",
+    "year": "’23",
+    "email": "bethel@alab.org",
+    "img": "/images/on-campus/Bethel.webp"
+   }
+  ],
+  "html": "<div class=\"contact-person\"><img src=\"/images/on-campus/Bethel.webp\" alt=\"Portrait of Bethel Adiele\" loading=\"lazy\"><span><strong>Bethel Adiele</strong> <span class=\"muted\">(’23)</span><a href=\"mailto:bethel@alab.org\">bethel@alab.org</a></span></div>"
+ },
+ {
+  "school": "Cornell",
+  "people": [
+   {
+    "name": "Esther Li",
+    "year": "’14",
+    "email": "esther@alab.org",
+    "img": "/images/on-campus/Esther_headshot_2024.webp"
+   }
+  ],
+  "html": "<div class=\"contact-person\"><img src=\"/images/on-campus/Esther_headshot_2024.webp\" alt=\"Portrait of Esther Li\" loading=\"lazy\"><span><strong>Esther Li</strong> <span class=\"muted\">(’14)</span><a href=\"mailto:esther@alab.org\">esther@alab.org</a></span></div>"
+ },
+ {
+  "school": "Dartmouth",
+  "people": [
+   {
+    "name": "Carolyn Chen",
+    "year": "’14",
+    "email": "carolyn@alab.org",
+    "img": "/images/on-campus/Carolyn-Chen.webp"
+   }
+  ],
+  "html": "<div class=\"contact-person\"><img src=\"/images/on-campus/Carolyn-Chen.webp\" alt=\"Portrait of Carolyn Chen\" loading=\"lazy\"><span><strong>Carolyn Chen</strong> <span class=\"muted\">(’14)</span><a href=\"mailto:carolyn@alab.org\">carolyn@alab.org</a></span></div>"
+ },
+ {
+  "school": "Harvard",
+  "people": [
+   {
+    "name": "Ayi Agboglo",
+    "year": "PhD, current",
+    "email": "ayi@alab.org",
+    "img": "/images/on-campus/Ayi.webp"
+   }
+  ],
+  "html": "<div class=\"contact-person\"><img src=\"/images/on-campus/Ayi.webp\" alt=\"Portrait of Ayi Agboglo\" loading=\"lazy\"><span><strong>Ayi Agboglo</strong> <span class=\"muted\">(PhD, current)</span><a href=\"mailto:ayi@alab.org\">ayi@alab.org</a></span></div>"
+ },
+ {
+  "school": "MIT",
+  "people": [
+   {
+    "name": "Kathryn Jin",
+    "year": "’22, MEng ’23",
+    "email": "kathryn@alab.org",
+    "img": "/images/on-campus/Kathryn.webp"
+   },
+   {
+    "name": "Ayi Agboglo",
+    "year": "PhD, current",
+    "email": "ayi@alab.org",
+    "img": "/images/on-campus/Ayi.webp"
+   }
+  ],
+  "html": "<div class=\"contact-person\"><img src=\"/images/on-campus/Kathryn.webp\" alt=\"Portrait of Kathryn Jin\" loading=\"lazy\"><span><strong>Kathryn Jin</strong> <span class=\"muted\">(’22, MEng ’23)</span><a href=\"mailto:kathryn@alab.org\">kathryn@alab.org</a></span></div><div class=\"contact-person\"><img src=\"/images/on-campus/Ayi.webp\" alt=\"Portrait of Ayi Agboglo\" loading=\"lazy\"><span><strong>Ayi Agboglo</strong> <span class=\"muted\">(PhD, current)</span><a href=\"mailto:ayi@alab.org\">ayi@alab.org</a></span></div>"
+ },
+ {
+  "school": "NYU",
+  "people": [
+   {
+    "name": "Noah Cheng",
+    "year": "’16",
+    "email": "noah@alab.org",
+    "img": "/images/on-campus/MicrosoftTeams-image-30.webp"
+   }
+  ],
+  "html": "<div class=\"contact-person\"><img src=\"/images/on-campus/MicrosoftTeams-image-30.webp\" alt=\"Portrait of Noah Cheng\" loading=\"lazy\"><span><strong>Noah Cheng</strong> <span class=\"muted\">(’16)</span><a href=\"mailto:noah@alab.org\">noah@alab.org</a></span></div>"
+ },
+ {
+  "school": "Princeton",
+  "people": [
+   {
+    "name": "Joane Joseph",
+    "year": "’16, PhD ’20",
+    "email": "joane@alab.org",
+    "img": "/images/on-campus/Joane-Joseph.webp"
+   },
+   {
+    "name": "Janet Lee",
+    "year": "’20",
+    "email": "janet@alab.org",
+    "img": "/images/on-campus/IMG_4958.webp"
+   }
+  ],
+  "html": "<div class=\"contact-person\"><img src=\"/images/on-campus/Joane-Joseph.webp\" alt=\"Portrait of Joane Joseph\" loading=\"lazy\"><span><strong>Joane Joseph</strong> <span class=\"muted\">(’16, PhD ’20)</span><a href=\"mailto:joane@alab.org\">joane@alab.org</a></span></div><div class=\"contact-person\"><img src=\"/images/on-campus/IMG_4958.webp\" alt=\"Portrait of Janet Lee\" loading=\"lazy\"><span><strong>Janet Lee</strong> <span class=\"muted\">(’20)</span><a href=\"mailto:janet@alab.org\">janet@alab.org</a></span></div>"
+ },
+ {
+  "school": "UPenn",
+  "people": [
+   {
+    "name": "Kenisha Santiago",
+    "year": "’20",
+    "email": "kenisha@alab.org",
+    "img": "/images/on-campus/Kenisha-Santiago.webp"
+   }
+  ],
+  "html": "<div class=\"contact-person\"><img src=\"/images/on-campus/Kenisha-Santiago.webp\" alt=\"Portrait of Kenisha Santiago\" loading=\"lazy\"><span><strong>Kenisha Santiago</strong> <span class=\"muted\">(’20)</span><a href=\"mailto:kenisha@alab.org\">kenisha@alab.org</a></span></div>"
+ },
+ {
+  "school": "Yale",
+  "people": [
+   {
+    "name": "Zion Perry",
+    "year": "PhD, current",
+    "email": "zion@alab.org",
+    "img": "/images/on-campus/MicrosoftTeams-image-18.webp"
+   }
+  ],
+  "html": "<div class=\"contact-person\"><img src=\"/images/on-campus/MicrosoftTeams-image-18.webp\" alt=\"Portrait of Zion Perry\" loading=\"lazy\"><span><strong>Zion Perry</strong> <span class=\"muted\">(PhD, current)</span><a href=\"mailto:zion@alab.org\">zion@alab.org</a></span></div>"
+ },
+ {
+  "school": "Other campuses",
+  "people": [
+   {
+    "name": "Kenisha Santiago",
+    "year": "",
+    "email": "kenisha@alab.org",
+    "img": "/images/on-campus/Kenisha-Santiago.webp"
+   }
+  ],
+  "html": "<div class=\"contact-person\"><img src=\"/images/on-campus/Kenisha-Santiago.webp\" alt=\"Portrait of Kenisha Santiago\" loading=\"lazy\"><span><strong>Kenisha Santiago</strong><a href=\"mailto:kenisha@alab.org\">kenisha@alab.org</a></span></div>"
+ }
+]
