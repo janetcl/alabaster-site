@@ -525,3 +525,9 @@ body, .prose { font-size: var(--fs-body); }
 /* Subpage covers: one height for every page (taller than before, not full-screen). */
 .hero--page, .hero--tall { min-height: 740px; }
 @media (max-width: 900px) { .hero--page, .hero--tall { min-height: 580px; } }
+/* Long-form pages: narrow sticky sidebar, wide readable text column. */
+.doc { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 72px; align-items: start; }
+.doc__toc { position: sticky; top: 40px; }
+.doc .prose { max-width: 820px; }
+.person dl { margin-top: 2px; }
+@media (max-width: 900px) { .doc { grid-template-columns: 1fr; gap: 32px; } .doc__toc { position: static; } }
