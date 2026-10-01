@@ -2,8 +2,13 @@
 <div class="card__media"><img src="/images/home/new_york_background.webp" alt="Midtown Manhattan at dusk" loading="lazy"><span class="tag">{{site.nyc.time}}</span></div>
 <div class="card__body">
 <h3>New York</h3>
-<a class="address" href="{{site.nyc.map}}">{{> pin}}<span>{{site.nyc.address}}</span></a>
-<span class="muted" style="font-size: 15px;">{{site.nyc.room}}. In person and streamed; lunch together after.</span>
-<div class="card__links"><a class="link-u" href="{{site.nyc.map}}">Get directions</a><a class="link-u soft" href="{{site.messenger}}">Message us</a><a class="small-link" href="{{site.youtube_live}}">Also streamed live on YouTube</a></div>
+<a class="address" href="{{site.nyc.map}}">{{> pin}}<span><strong>{{site.nyc.venue}}</strong><br>{{site.nyc.street}}<br>{{site.nyc.city_line}}<br><span class="address__note">{{site.nyc.room}}</span></span></a>
+<span class="muted" style="font-size: 15px;">In person and streamed; lunch together after.</span>
+<div class="card__links"><a class="link-u" href="{{site.nyc.map}}">Get directions</a><a class="link-u soft" href="{{site.messenger}}">Message us</a></div>
 </div>
+<a class="live" href="{{site.youtube_live}}">
+<span class="live__dot" aria-hidden="true"></span>
+<span class="live__text"><strong>Can’t make it in person?</strong><span>Watch the livestream on YouTube · Sundays {{site.nyc.time}}</span></span>
+<span class="live__cta">Watch live →</span>
+</a>
 </article>

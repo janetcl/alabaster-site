@@ -16,13 +16,15 @@
     "street": "38 W 36th St",
     "address": "Executive Hotel Le Soleil, 38 W 36th St, New York, NY 10018",
     "room": "C level, Bon Vivant Room",
-    "map": "https://maps.google.com/?q=38+W+36th+St+New+York+NY+10018"
+    "map": "https://maps.google.com/?q=38+W+36th+St+New+York+NY+10018",
+    "city_line": "New York, NY 10018"
   },
   "boston": {
     "time": "5:00 PM",
     "street": "129 Franklin St",
     "address": "129 Franklin St, Cambridge, MA 02139",
-    "map": "https://maps.google.com/?q=129+Franklin+St+Cambridge+MA+02139"
+    "map": "https://maps.google.com/?q=129+Franklin+St+Cambridge+MA+02139",
+    "city_line": "Cambridge, MA 02139"
   },
   "retreat": {
     "name": "Fall Retreat 2026",
