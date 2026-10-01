@@ -360,3 +360,37 @@ p { margin: 0; }
 .live__cta { font-size: 12px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; white-space: nowrap; }
 @media (prefers-reduced-motion: reduce) { .live__dot { animation: none; } }
 @media (max-width: 900px) { .live { padding: 18px 22px; } .live__cta { font-size: 11px; } }
+
+/* ---------- Polish: retreat lockup, sermons contained, footer rule ---------- */
+.retreat { padding-block: 40px 104px; }
+.retreat__lockup { display: inline-flex; flex-direction: column; align-self: flex-start; gap: 18px; }
+.retreat__title { margin-left: -0.045em; line-height: 0.84; }
+.retreat__when {
+  display: flex; justify-content: space-between; align-items: center; gap: 20px;
+  padding-top: 16px; border-top: 3px solid var(--orange);
+}
+.retreat__when::before { content: none; }
+.retreat__when span { font-family: var(--condensed); font-size: 34px; line-height: 1; text-transform: uppercase; letter-spacing: 0.01em; }
+.retreat__when span + span { padding-left: 20px; border-left: 1px solid rgba(247, 246, 243, 0.35); }
+.schools { max-width: 520px; }
+
+.sermons { max-width: var(--max); margin: 0 auto; padding-inline: var(--gutter); grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); }
+.sermons__art { min-height: 520px; }
+.sermons__art .rings { width: 820px; height: 820px; right: -300px; bottom: -320px; }
+.sermons__art .eyebrow { left: 32px; top: 30px; }
+.sermons__body { padding: 40px 0 40px 72px; max-width: none; }
+
+.site-footer .wrap { padding-top: 64px; border-top: 1px solid rgba(247, 246, 243, 0.12); }
+
+@media (max-width: 900px) {
+  .sermons { grid-template-columns: 1fr; }
+  .sermons__art { min-height: 300px; }
+  .sermons__art .rings { width: 540px; height: 540px; right: -190px; bottom: -210px; }
+  .sermons__body { padding: 30px 0 10px; }
+  .retreat { padding-block: 32px 64px; }
+  .retreat__when span { font-size: 26px; }
+  .site-footer .wrap { padding-top: 48px; }
+}
+.site-footer .wrap { border-top: 0; padding-top: 0; }
+.footer-grid { border-top: 1px solid rgba(247, 246, 243, 0.12); padding-top: 64px; }
+@media (max-width: 900px) { .footer-grid { padding-top: 44px; } }
