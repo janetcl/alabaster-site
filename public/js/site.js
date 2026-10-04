@@ -24,6 +24,15 @@
     el.textContent = next.toLocaleDateString('en-US', fmt);
   });
 
+  // Livestream: use this Sunday's link once it is filled in (site.json),
+  // otherwise keep the channel's /live link.
+  document.querySelectorAll('[data-live-url]').forEach(function (el) {
+    var url = el.getAttribute('data-live-url');
+    var date = el.getAttribute('data-live-date');
+    var nextIso = next.getFullYear() + '-' + String(next.getMonth() + 1).padStart(2, '0') + '-' + String(next.getDate()).padStart(2, '0');
+    if (url && date === nextIso) el.setAttribute('href', url);
+  });
+
   // Retreat registration deadline countdown.
   document.querySelectorAll('[data-deadline]').forEach(function (el) {
     var deadline = new Date(el.getAttribute('data-deadline'));

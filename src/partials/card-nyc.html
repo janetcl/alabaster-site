@@ -1,14 +1,17 @@
-<article class="card">
+<article class="card card--a">
 <div class="card__media"><img src="/images/home/new_york_background.webp" alt="Midtown Manhattan at dusk" loading="lazy"><span class="tag">Sundays · {{site.nyc.time}}</span></div>
 <div class="card__body">
 <h3>New York</h3>
 <a class="address" href="{{site.nyc.map}}">{{> pin}}<span><strong>{{site.nyc.venue}}</strong><br>{{site.nyc.street}}, {{site.nyc.city_line}}<br>C level · Bon Vivant Room</span></a>
-<span class="small muted">In person and livestreamed; lunch together after.</span>
 <div class="card__links"><a class="btn btn--ink btn--sm" href="{{site.nyc.map}}">Get directions</a></div>
-</div>
-<a class="live" href="{{site.youtube_live}}">
+<div class="live-box">
+<a class="live-box__now" href="{{site.youtube_live}}" data-live-url="{{site.livestream.upcoming.url}}" data-live-date="{{site.livestream.upcoming.date}}">
 <span class="live__dot" aria-hidden="true"></span>
 <span class="live__text"><strong>Watch the livestream</strong><span>YouTube · every Sunday at {{site.nyc.time}}</span></span>
 <span class="live__cta">Watch live →</span>
 </a>
+<a class="live-box__last" href="{{site.livestream.last.url}}"><span>Missed last Sunday?</span><span>Watch the {{site.livestream.last.label}} service →</span></a>
+</div>
+{{> expect-ny}}
+</div>
 </article>

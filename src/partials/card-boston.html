@@ -1,10 +1,10 @@
-<article class="card">
+<article class="card card--a">
 <div class="card__media"><img src="/images/who-we-are/unsplash-image-W6BUMYEhTG8.webp" alt="Boston skyline above autumn trees" loading="lazy"><span class="tag">Sundays · {{site.boston.time}}</span></div>
 <div class="card__body">
 <h3>Boston</h3>
 <a class="address" href="{{site.boston.map}}">{{> pin}}<span><strong>{{site.boston.street}}</strong><br>{{site.boston.city_line}}</span></a>
-<span class="small muted">Praise followed by teaching; dinner together after.</span>
 <div class="card__links"><a class="btn btn--ink btn--sm" href="{{site.messenger}}">Message us</a><a class="link-u" href="{{site.boston.map}}">Get directions</a></div>
-</div>
 <div class="note-first"><strong>First time?</strong><span>Please message us before you come so we know to expect you.</span></div>
+{{> expect-boston}}
+</div>
 </article>
