@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
   # Redeploy after the sermon bot commits (bot pushes don't trigger push events).
   workflow_run:
-    workflows: ["Update sermons"]
+    workflows: ["Update sermons", "Update livestream"]
     types: [completed]
 
 permissions:

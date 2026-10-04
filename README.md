@@ -18,6 +18,7 @@ script and no dependencies.
 | Members on Who We Are | `src/data/members.json` |
 | Campus contacts | `src/data/campuses.json` |
 | Latest sermons (auto-updated) | `src/data/sermons.json` |
+| This / last Sunday's livestream (auto-updated) | `src/data/livestream.json` |
 | Styles / script / images | `public/css`, `public/js`, `public/images` |
 
 Most weekly edits (a new address, a retreat date, turning the top banner
@@ -29,6 +30,10 @@ off) are a one-line change in `src/data/site.json`.
 - **"Watch live"** points at `youtube.com/@AlabGrp/live`, which YouTube
   always sends to the current or next live stream.
 - **Retreat countdown** reads `retreat.deadline` in `site.json`.
+- **Livestream links**: Sunday streams are unlisted, so
+  `scripts/update_livestream.py` reads the channel's broadcasts as the owner
+  (read-only) and fills `src/data/livestream.json` — see
+  `docs/youtube-setup.md` for the one-time sign-in.
 - **Latest sermons**: `scripts/update_sermons.py` reads the Apple Podcasts
   feed; `.github/workflows/update-sermons.yml` runs it twice a week and
   commits any change, which triggers a redeploy.

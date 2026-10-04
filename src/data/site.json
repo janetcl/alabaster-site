@@ -40,17 +40,5 @@
     "text": "Oct 16–18 · Free for university students",
     "cta": "Register",
     "href": "/fr-26"
-  },
-  "livestream": {
-    "_how": "Paste each Sunday's YouTube link here. 'upcoming' = this Sunday's stream (leave url empty until it is scheduled); 'last' = the previous Sunday. Links are unlisted, so they can't be found automatically.",
-    "upcoming": {
-      "url": "",
-      "date": "2026-10-04"
-    },
-    "last": {
-      "url": "https://youtube.com/live/WGtjcra8FpU",
-      "date": "2026-09-27",
-      "label": "Sep 27"
-    }
   }
 }
