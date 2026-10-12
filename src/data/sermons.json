@@ -1,28 +1,42 @@
 {
   "latest": {
-    "title": "Who Are My Brothers",
-    "iso": "2026-08-30",
-    "date": "Aug 30",
-    "long": "Sunday, Aug 30",
-    "url": "https://podcasts.apple.com/us/podcast/260830-who-are-my-brothers/id1704492988?i=1000791951417&uo=4"
+    "title": "You Will Not Always Have Me",
+    "iso": "2026-09-13",
+    "date": "Sep 13",
+    "long": "Sunday, Sep 13",
+    "url": "https://podcasts.apple.com/us/podcast/260913-you-will-not-always-have-me/id1704492988?i=1000794568893&uo=4"
   },
   "earlier": [
     {
-      "title": "Write Yourself Into the Story",
-      "iso": "2026-08-09",
-      "date": "Aug 9",
-      "long": "Sunday, Aug 9",
-      "url": "https://podcasts.apple.com/us/podcast/260809-write-yourself-into-the-story/id1704492988?i=1000791705513&uo=4"
+      "title": "Your Sins Are Forgiven",
+      "iso": "2026-09-06",
+      "date": "Sep 6",
+      "long": "Sunday, Sep 6",
+      "url": "https://podcasts.apple.com/us/podcast/260906-your-sins-are-forgiven/id1704492988?i=1000794557513&uo=4"
     },
     {
-      "title": "Walk Together",
-      "iso": "2026-08-02",
-      "date": "Aug 2",
-      "long": "Sunday, Aug 2",
-      "url": "https://podcasts.apple.com/us/podcast/260802-walk-together/id1704492988?i=1000790438209&uo=4"
+      "title": "Who Are My Brothers",
+      "iso": "2026-08-30",
+      "date": "Aug 30",
+      "long": "Sunday, Aug 30",
+      "url": "https://podcasts.apple.com/us/podcast/260830-who-are-my-brothers/id1704492988?i=1000791951417&uo=4"
     }
   ],
   "all": [
+    {
+      "title": "You Will Not Always Have Me",
+      "iso": "2026-09-13",
+      "date": "Sep 13",
+      "long": "Sunday, Sep 13",
+      "url": "https://podcasts.apple.com/us/podcast/260913-you-will-not-always-have-me/id1704492988?i=1000794568893&uo=4"
+    },
+    {
+      "title": "Your Sins Are Forgiven",
+      "iso": "2026-09-06",
+      "date": "Sep 6",
+      "long": "Sunday, Sep 6",
+      "url": "https://podcasts.apple.com/us/podcast/260906-your-sins-are-forgiven/id1704492988?i=1000794557513&uo=4"
+    },
     {
       "title": "Who Are My Brothers",
       "iso": "2026-08-30",
