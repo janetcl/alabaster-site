@@ -95,9 +95,19 @@ def main():
         ctx["description"] = meta.get("description", "A church in New York City and Boston devoted to Jesus Christ.")
         ctx["content"] = render(body, ctx)
         html = render(layout, ctx)
+        if page.stem != "index":
+            # Mark this page's links in the main nav so the current section shows.
+            html = re.sub(r'<nav class="nav".*?</nav>',
+                          lambda m: m.group(0).replace(f'href="/{page.stem}"', f'href="/{page.stem}" aria-current="page"'),
+                          html, count=1, flags=re.S)
         if BASE:
             html = re.sub(r'(href|src|content)="/(?!/)', rf'\1="{BASE}/', html)
-        out = DIST / "index.html" if page.stem == "index" else DIST / page.stem / "index.html"
+        if page.stem == "index":
+            out = DIST / "index.html"
+        elif page.stem == "404":
+            out = DIST / "404.html"  # GitHub Pages / Netlify serve this for missing paths
+        else:
+            out = DIST / page.stem / "index.html"
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(html)
         print(f"built /{'' if page.stem == 'index' else page.stem}")

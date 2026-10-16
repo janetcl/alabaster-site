@@ -575,3 +575,29 @@ body, .prose { font-size: var(--fs-body); }
 .announce span.u { color: var(--orange); text-decoration-color: rgba(244, 122, 54, 0.6); }
 .announce:hover { opacity: 1; }
 .announce:hover span.u { text-decoration-color: var(--orange); }
+
+/* ---------- Redesign audit: states, focus, a11y, type details ---------- */
+/* Skip link for keyboard users */
+.skip-link { position: absolute; left: var(--gutter); top: 0; z-index: 10; transform: translateY(-120%); padding: 12px 20px; background: var(--ink); color: var(--on-dark); font-size: var(--fs-label); font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; text-decoration: none; transition: transform 0.2s ease; }
+.skip-link:focus { transform: translateY(0); }
+/* Focus ring: navy on light surfaces (orange was too faint on off-white), orange on navy */
+:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+.dark :focus-visible, .site-header :focus-visible, .site-footer :focus-visible, .hero :focus-visible, .photo-band :focus-visible, .announce:focus-visible, .retreat-plug:focus-visible, .skip-link:focus-visible { outline-color: var(--orange); }
+.site-header .nav.is-open :focus-visible, .nav__menu :focus-visible { outline-color: var(--ink); }
+/* Hover/press: eased colour shifts on buttons instead of the blanket fade */
+a, .btn, .menu-toggle { transition: opacity 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.1s ease; }
+.btn:hover { opacity: 1; }
+.btn--ink:hover { background: #33354A; }
+.btn--light:hover { background: var(--paper); }
+.btn--outline:hover { border-color: var(--ink); background: rgba(29, 30, 44, 0.04); }
+.btn--outline-light:hover { border-color: var(--white); background: rgba(255, 255, 255, 0.1); }
+.btn--orange:hover { background: #F68D52; }
+.btn:active, .nav__give:active { transform: translateY(1px); }
+/* Current page in the main nav */
+.nav > a[aria-current="page"], .nav__item:has([aria-current="page"]) > a { text-decoration: underline; text-decoration-thickness: 1.5px; text-underline-offset: 6px; }
+.nav__menu a[aria-current="page"] { background: var(--paper); }
+/* No lone last words in headings; nicer paragraph rag */
+h1, h2, h3, .h4, .h5, .retreat__tagline, .quote-lg { text-wrap: balance; }
+p, .lede, blockquote { text-wrap: pretty; }
+/* Times and dates line up */
+.step__time, .time-num, .episode__date, .retreat__when, .tag { font-variant-numeric: tabular-nums; }
