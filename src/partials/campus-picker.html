@@ -3,5 +3,5 @@
 {{#each campuses}}<input class="picker__input sr-only" type="radio" name="campus" id="campus-{{this.id}}" value="{{this.id}}"{{#if this.default}} checked{{/if}}>{{/each}}
 <div class="picker__chips">{{#each campuses}}<label class="picker__chip" for="campus-{{this.id}}">{{this.school}}</label>{{/each}}</div>
 <div class="picker__panels">{{#each campuses}}<div class="picker__panel picker__panel--{{this.id}}">{{this.html}}</div>{{/each}}</div>
-<style>{{#each campuses}}#campus-{{this.id}}:checked ~ .picker__panels .picker__panel--{{this.id}}{display:flex}#campus-{{this.id}}:checked ~ .picker__chips [for="campus-{{this.id}}"]{background:var(--paper);color:var(--ink);border-color:var(--paper)}#campus-{{this.id}}:focus-visible ~ .picker__chips [for="campus-{{this.id}}"]{outline:2px solid var(--orange);outline-offset:3px}{{/each}}</style>
+<style>{{#each campuses}}#campus-{{this.id}}:checked ~ .picker__panels .picker__panel--{{this.id}}{visibility:visible}#campus-{{this.id}}:checked ~ .picker__chips [for="campus-{{this.id}}"]{background:var(--paper);color:var(--ink);border-color:var(--paper)}#campus-{{this.id}}:focus-visible ~ .picker__chips [for="campus-{{this.id}}"]{outline:2px solid var(--orange);outline-offset:3px}{{/each}}</style>
 </fieldset>

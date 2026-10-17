@@ -767,7 +767,8 @@ h2 em, h3 em { font-style: normal; }
 .picker__chip { min-height: 44px; padding: 0 16px; display: inline-flex; align-items: center; border: 1.5px solid rgba(255, 255, 255, 0.45); color: var(--white); font-size: 15px; font-weight: 600; cursor: pointer; user-select: none; transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 160ms var(--ease-out); }
 .picker__chip:active { transform: scale(0.97); }
 @media (hover: hover) and (pointer: fine) { .picker__chip:hover { border-color: var(--white); } }
-.picker__panel { display: none; flex-direction: column; background: var(--paper); color: var(--ink); padding: 4px 20px; }
+.picker__panels { display: grid; }
+.picker__panel { grid-area: 1 / 1; visibility: hidden; display: flex; flex-direction: column; background: var(--paper); color: var(--ink); padding: 4px 20px; }
 .picker__panel .contact-person { display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 16px; align-items: center; padding: 14px 0; }
 .picker__panel .contact-person img { width: 56px; height: 70px; object-fit: cover; }
 .picker__panel .contact-person span { display: flex; flex-direction: column; gap: 2px; font-size: 15px; line-height: 1.4; }
