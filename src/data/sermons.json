@@ -1,28 +1,63 @@
 {
   "latest": {
-    "title": "You Will Not Always Have Me",
-    "iso": "2026-09-13",
-    "date": "Sep 13",
-    "long": "Sunday, Sep 13",
-    "url": "https://podcasts.apple.com/us/podcast/260913-you-will-not-always-have-me/id1704492988?i=1000794568893&uo=4"
+    "title": "Climb the Mountain",
+    "iso": "2026-10-18",
+    "date": "Oct 18",
+    "long": "Sunday, Oct 18",
+    "url": "https://podcasts.apple.com/us/podcast/261018-climb-the-mountain/id1704492988?i=1000797979591&uo=4"
   },
   "earlier": [
     {
-      "title": "Your Sins Are Forgiven",
-      "iso": "2026-09-06",
-      "date": "Sep 6",
-      "long": "Sunday, Sep 6",
-      "url": "https://podcasts.apple.com/us/podcast/260906-your-sins-are-forgiven/id1704492988?i=1000794557513&uo=4"
+      "title": "The Mind of a King",
+      "iso": "2026-10-11",
+      "date": "Oct 11",
+      "long": "Sunday, Oct 11",
+      "url": "https://podcasts.apple.com/us/podcast/261011-the-mind-of-a-king/id1704492988?i=1000797976565&uo=4"
     },
     {
-      "title": "Who Are My Brothers",
-      "iso": "2026-08-30",
-      "date": "Aug 30",
-      "long": "Sunday, Aug 30",
-      "url": "https://podcasts.apple.com/us/podcast/260830-who-are-my-brothers/id1704492988?i=1000791951417&uo=4"
+      "title": "Out of Sheer Love",
+      "iso": "2026-10-04",
+      "date": "Oct 4",
+      "long": "Sunday, Oct 4",
+      "url": "https://podcasts.apple.com/us/podcast/261004-out-of-sheer-love/id1704492988?i=1000797958892&uo=4"
     }
   ],
   "all": [
+    {
+      "title": "Climb the Mountain",
+      "iso": "2026-10-18",
+      "date": "Oct 18",
+      "long": "Sunday, Oct 18",
+      "url": "https://podcasts.apple.com/us/podcast/261018-climb-the-mountain/id1704492988?i=1000797979591&uo=4"
+    },
+    {
+      "title": "The Mind of a King",
+      "iso": "2026-10-11",
+      "date": "Oct 11",
+      "long": "Sunday, Oct 11",
+      "url": "https://podcasts.apple.com/us/podcast/261011-the-mind-of-a-king/id1704492988?i=1000797976565&uo=4"
+    },
+    {
+      "title": "Out of Sheer Love",
+      "iso": "2026-10-04",
+      "date": "Oct 4",
+      "long": "Sunday, Oct 4",
+      "url": "https://podcasts.apple.com/us/podcast/261004-out-of-sheer-love/id1704492988?i=1000797958892&uo=4"
+    },
+    {
+      "title": "An Offering That Lasts",
+      "iso": "2026-09-27",
+      "date": "Sep 27",
+      "long": "Sunday, Sep 27",
+      "url": "https://podcasts.apple.com/us/podcast/260927-an-offering-that-lasts/id1704492988?i=1000797958565&uo=4"
+    },
+    {
+      "title": "Born for Adversity",
+      "iso": "2026-09-20",
+      "date": "Sep 20",
+      "long": "Sunday, Sep 20",
+      "url": "https://podcasts.apple.com/us/podcast/260920-born-for-adversity/id1704492988?i=1000797958705&uo=4"
+    },
     {
       "title": "You Will Not Always Have Me",
       "iso": "2026-09-13",
@@ -71,20 +106,6 @@
       "date": "Jul 19",
       "long": "Sunday, Jul 19",
       "url": "https://podcasts.apple.com/us/podcast/260719-accepted-by-god/id1704492988?i=1000788388476&uo=4"
-    },
-    {
-      "title": "Dare to Dream",
-      "iso": "2026-07-12",
-      "date": "Jul 12",
-      "long": "Sunday, Jul 12",
-      "url": "https://podcasts.apple.com/us/podcast/260712-dare-to-dream/id1704492988?i=1000788080865&uo=4"
-    },
-    {
-      "title": "Inspire, Don't Be Envied",
-      "iso": "2026-07-05",
-      "date": "Jul 5",
-      "long": "Sunday, Jul 5",
-      "url": "https://podcasts.apple.com/us/podcast/260705-inspire-dont-be-envied/id1704492988?i=1000788038447&uo=4"
     }
   ]
 }
