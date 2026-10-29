@@ -1,28 +1,35 @@
 {
   "latest": {
-    "title": "Climb the Mountain",
-    "iso": "2026-10-18",
-    "date": "Oct 18",
-    "long": "Sunday, Oct 18",
-    "url": "https://podcasts.apple.com/us/podcast/261018-climb-the-mountain/id1704492988?i=1000797979591&uo=4"
+    "title": "Lean On His Mercy",
+    "iso": "2026-10-25",
+    "date": "Oct 25",
+    "long": "Sunday, Oct 25",
+    "url": "https://podcasts.apple.com/us/podcast/261025-lean-on-his-mercy/id1704492988?i=1000798285097&uo=4"
   },
   "earlier": [
+    {
+      "title": "Climb the Mountain",
+      "iso": "2026-10-18",
+      "date": "Oct 18",
+      "long": "Sunday, Oct 18",
+      "url": "https://podcasts.apple.com/us/podcast/261018-climb-the-mountain/id1704492988?i=1000797979591&uo=4"
+    },
     {
       "title": "The Mind of a King",
       "iso": "2026-10-11",
       "date": "Oct 11",
       "long": "Sunday, Oct 11",
       "url": "https://podcasts.apple.com/us/podcast/261011-the-mind-of-a-king/id1704492988?i=1000797976565&uo=4"
-    },
-    {
-      "title": "Out of Sheer Love",
-      "iso": "2026-10-04",
-      "date": "Oct 4",
-      "long": "Sunday, Oct 4",
-      "url": "https://podcasts.apple.com/us/podcast/261004-out-of-sheer-love/id1704492988?i=1000797958892&uo=4"
     }
   ],
   "all": [
+    {
+      "title": "Lean On His Mercy",
+      "iso": "2026-10-25",
+      "date": "Oct 25",
+      "long": "Sunday, Oct 25",
+      "url": "https://podcasts.apple.com/us/podcast/261025-lean-on-his-mercy/id1704492988?i=1000798285097&uo=4"
+    },
     {
       "title": "Climb the Mountain",
       "iso": "2026-10-18",
@@ -99,13 +106,6 @@
       "date": "Jul 26",
       "long": "Sunday, Jul 26",
       "url": "https://podcasts.apple.com/us/podcast/260726-neither-poverty-nor-riches/id1704492988?i=1000789214122&uo=4"
-    },
-    {
-      "title": "Accepted By God",
-      "iso": "2026-07-19",
-      "date": "Jul 19",
-      "long": "Sunday, Jul 19",
-      "url": "https://podcasts.apple.com/us/podcast/260719-accepted-by-god/id1704492988?i=1000788388476&uo=4"
     }
   ]
 }
