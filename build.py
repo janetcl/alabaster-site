@@ -15,6 +15,7 @@ Template syntax:
   {{#if a.b}} ... {{/if}}         keep block when value is truthy
   {{#each a.b}} {{this.x}} {{/each}}
 """
+import hashlib
 import json
 import os
 import re
@@ -87,6 +88,10 @@ def main():
 
     data = {p.stem: json.loads(p.read_text()) for p in (SRC / "data").glob("*.json")}
     layout = (SRC / "layout.html").read_text()
+    # Stamp the stylesheet and script with a content hash so browsers never keep a stale copy.
+    for asset in ("css/site.css", "js/site.js"):
+        stamp = hashlib.sha1((ROOT / "public" / asset).read_bytes()).hexdigest()[:10]
+        layout = layout.replace(f'"/{asset}"', f'"/{asset}?v={stamp}"')
 
     for page in sorted((SRC / "pages").glob("*.html")):
         meta, body = parse_page(page)

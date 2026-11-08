@@ -760,22 +760,41 @@ h2 em, h3 em { font-style: normal; }
   .hero__shade, .hero--page .hero__shade { background: linear-gradient(180deg, rgba(29, 30, 44, 0.45) 0%, rgba(29, 30, 44, 0.2) 28%, rgba(29, 30, 44, 0.62) 55%, rgba(29, 30, 44, 0.55) 78%, rgba(29, 30, 44, 0) 100%); }
 }
 
-/* ---------- Winter Retreat 2027: matches the poster (charcoal concrete, prism light, Jost Light caps) ----------
+/* The full-bleed poster photo only exists for the winter theme */
+.retreat-stage__bg { display: none; }
+
+/* ---------- Winter Retreat 2027: the poster, carried through the page ----------
+   Charcoal concrete, one band of prism light, Jost Light caps. No orange, no navy, no serif.
    Switched on by site.retreat.theme = "winter"; the Fall flyer styles above stay for next autumn. */
 [data-retreat="winter"] {
   --retreat-bg: #1B1C1C;
+  --retreat-raised: #242525;
   --retreat-ink: #F2F1EE;
   --retreat-muted: rgba(242, 241, 238, 0.66);
+  --retreat-line: rgba(242, 241, 238, 0.16);
   --retreat-type: 'Jost', 'Futura', 'Inter', sans-serif;
 }
-[data-retreat="winter"] .dark:has(> .retreat),
-[data-retreat="winter"] section.dark:has(.retreat),
-[data-retreat="winter"] #schedule.dark { background: var(--retreat-bg); }
+
+/* Poster stage: the photo runs edge to edge, type sits on the dark concrete to its left */
+[data-retreat="winter"] .dark:has(> .retreat-stage),
+[data-retreat="winter"] section.dark:has(.retreat-stage) { background: var(--retreat-bg); }
+[data-retreat="winter"] .retreat-stage { position: relative; isolation: isolate; overflow: hidden; color: var(--retreat-ink); font-family: var(--retreat-type); }
+[data-retreat="winter"] .retreat-stage__bg { display: block; position: absolute; inset: 0; z-index: -1; }
+[data-retreat="winter"] .retreat-stage__bg img { width: 100%; height: 100%; object-fit: cover; object-position: 68% 50%; }
+[data-retreat="winter"] .retreat-stage__bg::after {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(90deg, rgba(27, 28, 28, 0.82) 0%, rgba(27, 28, 28, 0.55) 32%, rgba(27, 28, 28, 0) 58%);
+}
+[data-retreat="winter"] .retreat-stage .retreat {
+  grid-template-columns: minmax(0, 560px); align-content: center;
+  min-height: clamp(680px, 56.25vw, 940px); padding-block: 96px;
+}
+[data-retreat="winter"] .retreat-stage .bracketed { display: none; }
 
 [data-retreat="winter"] .retreat__lockup { gap: 26px; }
 [data-retreat="winter"] .retreat__title {
   font-family: var(--retreat-type); font-weight: 300; text-transform: uppercase; color: var(--retreat-ink);
-  font-size: clamp(52px, 6.6vw, 104px); line-height: 1.1; letter-spacing: 0.14em; margin-left: -0.01em;
+  font-size: clamp(52px, 6.4vw, 100px); line-height: 1.1; letter-spacing: 0.14em; margin-left: -0.01em;
 }
 [data-retreat="winter"] .retreat__when {
   flex-direction: column; align-items: flex-start; text-align: left; gap: 6px; border-top: 0; position: relative; padding-top: 30px;
@@ -785,26 +804,58 @@ h2 em, h3 em { font-style: normal; }
 }
 [data-retreat="winter"] .retreat__when span {
   font-family: var(--retreat-type); font-weight: 300; font-size: clamp(18px, 1.6vw, 22px);
-  letter-spacing: 0.24em; line-height: 1.35; color: var(--retreat-ink);
+  letter-spacing: 0.24em; line-height: 1.35; color: var(--retreat-ink); padding-left: 0; border-left: 0;
 }
-[data-retreat="winter"] .retreat__deadline { color: var(--retreat-muted); font-weight: 500; }
+[data-retreat="winter"] .retreat__deadline { font-family: var(--retreat-type); color: var(--retreat-muted); font-weight: 400; letter-spacing: 0.04em; }
+[data-retreat="winter"] .retreat__tagline { font-family: var(--retreat-type); font-style: normal; font-weight: 300; font-size: 24px; letter-spacing: 0.02em; }
 [data-retreat="winter"] .retreat .orange,
 [data-retreat="winter"] .retreat-plug .orange { color: inherit; }
-[data-retreat="winter"] .retreat .mono-list .orange { color: var(--retreat-muted); }
+[data-retreat="winter"] .retreat .mono-list,
+[data-retreat="winter"] .retreat .schools { font-family: var(--retreat-type); font-weight: 400; letter-spacing: 0.22em; color: var(--retreat-ink); }
+[data-retreat="winter"] .retreat .mono-list .orange,
+[data-retreat="winter"] .retreat .schools { color: var(--retreat-muted); }
+[data-retreat="winter"] .retreat .schools { border-top-color: var(--retreat-line); letter-spacing: 0.16em; }
+
+/* Buttons: off-white on charcoal, square like the poster's rule */
+[data-retreat="winter"] .retreat .btn,
+[data-retreat="winter"] .retreat-page .btn,
+[data-retreat="winter"] .retreat-plug .btn { font-family: var(--retreat-type); font-weight: 400; letter-spacing: 0.2em; }
 [data-retreat="winter"] .retreat .btn--orange,
-[data-retreat="winter"] #register .btn--orange { background: var(--retreat-ink); color: var(--retreat-bg); }
+[data-retreat="winter"] .retreat-page .btn--orange,
+[data-retreat="winter"] .retreat-plug .btn--orange { background: var(--retreat-ink); color: var(--retreat-bg); }
 [data-retreat="winter"] .retreat .btn--orange:hover,
-[data-retreat="winter"] #register .btn--orange:hover { background: #FFFFFF; }
+[data-retreat="winter"] .retreat-page .btn--orange:hover { background: #FFFFFF; }
+[data-retreat="winter"] .retreat .btn--outline-light { border-color: rgba(242, 241, 238, 0.7); color: var(--retreat-ink); }
 
-/* The poster photo runs clean, no orange corner brackets */
-[data-retreat="winter"] .retreat .bracketed { padding: 0; }
-[data-retreat="winter"] .retreat .bracketed::before,
-[data-retreat="winter"] .retreat .bracketed::after { content: none; }
-
-/* Schedule on the retreat page */
-[data-retreat="winter"] .schedule__day h3 {
-  font-family: var(--retreat-type); font-weight: 300; font-size: 30px; letter-spacing: 0.18em; color: var(--retreat-ink);
+/* The whole retreat page lives on the poster's charcoal */
+[data-retreat="winter"] body:has(.retreat-page),
+[data-retreat="winter"] body:has(.retreat-page) .site-header--solid,
+[data-retreat="winter"] body:has(.retreat-page) .site-footer { background: var(--retreat-bg); }
+[data-retreat="winter"] .retreat-page {
+  --ink: var(--retreat-ink); --muted: var(--retreat-muted); --label: var(--retreat-muted);
+  --line: var(--retreat-line); --tone: var(--retreat-raised); --on-dark-muted: var(--retreat-muted);
+  background: var(--retreat-bg); color: var(--retreat-ink); font-family: var(--retreat-type); font-weight: 400;
 }
+[data-retreat="winter"] .retreat-page .dark { background: transparent; }
+[data-retreat="winter"] .retreat-page .prose { color: var(--retreat-ink); font-size: 18px; }
+[data-retreat="winter"] .retreat-page h2:not(.retreat__title) {
+  font-family: var(--retreat-type); font-weight: 300; text-transform: uppercase;
+  font-size: clamp(28px, 3.3vw, 46px); line-height: 1.25; letter-spacing: 0.12em;
+}
+[data-retreat="winter"] .retreat-page .h2-wide { max-width: 28ch; }
+[data-retreat="winter"] .retreat-page h3 {
+  font-family: var(--retreat-type); font-weight: 400; text-transform: uppercase; font-size: 18px; letter-spacing: 0.2em; line-height: 1.4;
+}
+[data-retreat="winter"] .retreat-page .included figcaption h3 { margin-block: 6px 8px; }
+[data-retreat="winter"] .retreat-page .give-card { background: var(--retreat-raised); }
+[data-retreat="winter"] .retreat-page .give-card p,
+[data-retreat="winter"] .retreat-page .give-card ol { color: var(--retreat-muted); }
+[data-retreat="winter"] .retreat-page .faq summary { font-family: var(--retreat-type); font-weight: 400; font-size: 20px; letter-spacing: 0.01em; }
+[data-retreat="winter"] .retreat-page .testimony blockquote { font-family: var(--retreat-type); font-weight: 300; font-size: 20px; line-height: 1.55; }
+[data-retreat="winter"] .retreat-page .testimony cite { font-weight: 400; letter-spacing: 0.08em; color: var(--retreat-muted); }
+[data-retreat="winter"] .retreat-page .schedule__day h3 { font-weight: 300; font-size: 30px; letter-spacing: 0.18em; color: var(--retreat-ink); }
+[data-retreat="winter"] .retreat-page .schedule__day .part { color: var(--retreat-muted); font-weight: 400; letter-spacing: 0.06em; }
+[data-retreat="winter"] .retreat-page a:not(.btn) { text-decoration-color: rgba(242, 241, 238, 0.45); }
 
 /* Announcement bar */
 [data-retreat="winter"] .announce { background: var(--retreat-bg); }
@@ -824,7 +875,25 @@ h2 em, h3 em { font-style: normal; }
   font-family: var(--retreat-type); font-weight: 300; font-size: 20px; letter-spacing: 0.2em; color: var(--retreat-ink);
 }
 [data-retreat="winter"] .retreat-plug__meta .mono[style] { color: var(--retreat-muted) !important; }
-[data-retreat="winter"] .retreat-plug .btn--orange { background: var(--retreat-ink); color: var(--retreat-bg); }
+
 @media (max-width: 700px) {
+  /* Phone: the tall crop of the photo on top, type continuing below it on the charcoal */
+  [data-retreat="winter"] .retreat-stage__bg { position: relative; height: 118vw; }
+  [data-retreat="winter"] .retreat-stage__bg img { object-position: 50% 40%; }
+  [data-retreat="winter"] .retreat-stage__bg::after { background: linear-gradient(180deg, rgba(27, 28, 28, 0) 45%, var(--retreat-bg) 100%); }
+  [data-retreat="winter"] .retreat-stage .retreat { min-height: 0; margin-top: -34vw; padding-block: 0 72px; }
+  [data-retreat="winter"] .retreat__title { font-size: 46px; }
+  [data-retreat="winter"] .retreat__tagline { font-size: 21px; }
   [data-retreat="winter"] .retreat-plug__title { font-size: 36px; }
+}
+[data-retreat="winter"] .retreat-page h2 em, [data-retreat="winter"] .retreat-page h3 em { font-weight: inherit; }
+[data-retreat="winter"] .announce { font-family: var(--retreat-type); font-weight: 400; letter-spacing: 0.04em; }
+
+/* The poster's prism as one thin stripe under the charcoal announcement bar */
+[data-retreat="winter"] {
+  --prism: #1F3FD1, #1E8FE6, #36D0E0, #F06A9A, #F7A04A, #F4E3C2;
+}
+[data-retreat="winter"] .announce::after {
+  content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 2px;
+  background: linear-gradient(90deg, var(--prism));
 }
