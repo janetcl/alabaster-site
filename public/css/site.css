@@ -759,3 +759,72 @@ h2 em, h3 em { font-style: normal; }
 @media (max-width: 900px) {
   .hero__shade, .hero--page .hero__shade { background: linear-gradient(180deg, rgba(29, 30, 44, 0.45) 0%, rgba(29, 30, 44, 0.2) 28%, rgba(29, 30, 44, 0.62) 55%, rgba(29, 30, 44, 0.55) 78%, rgba(29, 30, 44, 0) 100%); }
 }
+
+/* ---------- Winter Retreat 2027: matches the poster (charcoal concrete, prism light, Jost Light caps) ----------
+   Switched on by site.retreat.theme = "winter"; the Fall flyer styles above stay for next autumn. */
+[data-retreat="winter"] {
+  --retreat-bg: #1B1C1C;
+  --retreat-ink: #F2F1EE;
+  --retreat-muted: rgba(242, 241, 238, 0.66);
+  --retreat-type: 'Jost', 'Futura', 'Inter', sans-serif;
+}
+[data-retreat="winter"] .dark:has(> .retreat),
+[data-retreat="winter"] section.dark:has(.retreat),
+[data-retreat="winter"] #schedule.dark { background: var(--retreat-bg); }
+
+[data-retreat="winter"] .retreat__lockup { gap: 26px; }
+[data-retreat="winter"] .retreat__title {
+  font-family: var(--retreat-type); font-weight: 300; text-transform: uppercase; color: var(--retreat-ink);
+  font-size: clamp(52px, 6.6vw, 104px); line-height: 1.1; letter-spacing: 0.14em; margin-left: -0.01em;
+}
+[data-retreat="winter"] .retreat__when {
+  flex-direction: column; align-items: flex-start; text-align: left; gap: 6px; border-top: 0; position: relative; padding-top: 30px;
+}
+[data-retreat="winter"] .retreat__when::before {
+  content: ''; position: absolute; top: 0; left: 0; width: 72px; height: 1.5px; background: var(--retreat-ink);
+}
+[data-retreat="winter"] .retreat__when span {
+  font-family: var(--retreat-type); font-weight: 300; font-size: clamp(18px, 1.6vw, 22px);
+  letter-spacing: 0.24em; line-height: 1.35; color: var(--retreat-ink);
+}
+[data-retreat="winter"] .retreat__deadline { color: var(--retreat-muted); font-weight: 500; }
+[data-retreat="winter"] .retreat .orange,
+[data-retreat="winter"] .retreat-plug .orange { color: inherit; }
+[data-retreat="winter"] .retreat .mono-list .orange { color: var(--retreat-muted); }
+[data-retreat="winter"] .retreat .btn--orange,
+[data-retreat="winter"] #register .btn--orange { background: var(--retreat-ink); color: var(--retreat-bg); }
+[data-retreat="winter"] .retreat .btn--orange:hover,
+[data-retreat="winter"] #register .btn--orange:hover { background: #FFFFFF; }
+
+/* The poster photo runs clean, no orange corner brackets */
+[data-retreat="winter"] .retreat .bracketed { padding: 0; }
+[data-retreat="winter"] .retreat .bracketed::before,
+[data-retreat="winter"] .retreat .bracketed::after { content: none; }
+
+/* Schedule on the retreat page */
+[data-retreat="winter"] .schedule__day h3 {
+  font-family: var(--retreat-type); font-weight: 300; font-size: 30px; letter-spacing: 0.18em; color: var(--retreat-ink);
+}
+
+/* Announcement bar */
+[data-retreat="winter"] .announce { background: var(--retreat-bg); }
+[data-retreat="winter"] .announce strong {
+  font-family: var(--retreat-type); font-weight: 400; letter-spacing: 0.24em; color: var(--retreat-ink);
+}
+[data-retreat="winter"] .announce span.u { color: var(--retreat-ink); text-decoration-color: rgba(242, 241, 238, 0.5); }
+[data-retreat="winter"] .announce:hover span.u { text-decoration-color: var(--retreat-ink); }
+
+/* Plug on Events and On Campus */
+[data-retreat="winter"] .retreat-plug { background: var(--retreat-bg); }
+[data-retreat="winter"] .retreat-plug::before, [data-retreat="winter"] .retreat-plug::after { content: none; }
+[data-retreat="winter"] .retreat-plug__title {
+  font-family: var(--retreat-type); font-weight: 300; font-size: 44px; line-height: 1.12; letter-spacing: 0.14em; color: var(--retreat-ink);
+}
+[data-retreat="winter"] .retreat-plug__meta .when {
+  font-family: var(--retreat-type); font-weight: 300; font-size: 20px; letter-spacing: 0.2em; color: var(--retreat-ink);
+}
+[data-retreat="winter"] .retreat-plug__meta .mono[style] { color: var(--retreat-muted) !important; }
+[data-retreat="winter"] .retreat-plug .btn--orange { background: var(--retreat-ink); color: var(--retreat-bg); }
+@media (max-width: 700px) {
+  [data-retreat="winter"] .retreat-plug__title { font-size: 36px; }
+}

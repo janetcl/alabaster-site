@@ -29,11 +29,12 @@
   "retreat": {
     "name": "Winter Retreat 2027",
     "season": "Winter",
-    "dates": "Jan 29–31",
+    "dates": "January 29–31",
     "place": "Orange, CT",
     "deadline": "2027-01-14T23:59:00-05:00",
     "deadlineText": "Register by Jan 14",
-    "register_url": "https://www.alabaster.org/wr-27"
+    "register_url": "https://www.alabaster.org/wr-27",
+    "theme": "winter"
   },
   "announce": {
     "show": true,

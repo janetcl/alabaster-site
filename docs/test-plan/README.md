@@ -1,6 +1,6 @@
 # Test plan
 
-Generated 2026-11-08 09:53 by `scripts/test_plan.py` from a fresh build.
+Generated 2026-11-08 10:10 by `scripts/test_plan.py` from a fresh build.
 
 ## Automated checks
 
