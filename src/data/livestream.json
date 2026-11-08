@@ -1,15 +1,15 @@
 {
   "upcoming": {
+    "url": "https://youtube.com/live/B48j2kG6pTc",
+    "date": "2026-11-08",
+    "label": "Nov 8",
+    "title": "Alabaster Group Sunday Service - 11/8/26"
+  },
+  "last": {
     "url": "",
-    "date": "2026-10-04",
+    "date": "",
     "label": "",
     "title": ""
   },
-  "last": {
-    "url": "https://youtube.com/live/WGtjcra8FpU",
-    "date": "2026-09-27",
-    "label": "Sep 27",
-    "title": "Alabaster Group Sunday Service - 9/27/26"
-  },
-  "updated": "manual"
+  "updated": "2026-11-08T14:49Z"
 }

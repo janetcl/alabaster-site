@@ -27,18 +27,19 @@
     "city_line": "Cambridge, MA 02139"
   },
   "retreat": {
-    "name": "Fall Retreat 2026",
-    "dates": "Oct 16–18",
+    "name": "Winter Retreat 2027",
+    "season": "Winter",
+    "dates": "Jan 29–31",
     "place": "Orange, CT",
-    "deadline": "2026-10-01T23:59:00-04:00",
-    "deadlineText": "Register by Oct 1",
-    "register_url": "#register"
+    "deadline": "2027-01-14T23:59:00-05:00",
+    "deadlineText": "Register by Jan 14",
+    "register_url": "https://www.alabaster.org/wr-27"
   },
   "announce": {
     "show": true,
-    "label": "Fall Retreat 2026",
-    "text": "Oct 16–18 · Free for university students",
+    "label": "Winter Retreat 2027",
+    "text": "Jan 29–31 · Free for university students",
     "cta": "Register",
-    "href": "/fr-26"
+    "href": "/wr-27"
   }
 }

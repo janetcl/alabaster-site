@@ -10,7 +10,7 @@
 <span class="live__text"><strong>Watch the livestream</strong><span>YouTube · every Sunday at {{site.nyc.time}}</span></span>
 <span class="live__cta">Watch live →</span>
 </a>
-<a class="live-box__last" href="{{livestream.last.url}}"><span>Missed last Sunday?</span><span>Watch the {{livestream.last.label}} service →</span></a>
+{{#if livestream.last.url}}<a class="live-box__last" href="{{livestream.last.url}}"><span>Missed last Sunday?</span><span>Watch the {{livestream.last.label}} service →</span></a>{{/if}}
 </div>
 {{> expect-ny}}
 </div>
