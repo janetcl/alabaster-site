@@ -20,6 +20,8 @@ import json
 import os
 import re
 import shutil
+from datetime import datetime, timedelta
+from zoneinfo import ZoneInfo
 from pathlib import Path
 
 ROOT = Path(__file__).parent
@@ -81,12 +83,20 @@ def parse_page(path):
     return meta, body
 
 
+def this_sunday():
+    """Next Sunday in New York (today, if it is Sunday), the same rule site.js uses."""
+    today = datetime.now(ZoneInfo("America/New_York")).date()
+    d = today + timedelta(days=(6 - today.weekday()) % 7)
+    return {"long": f"{d:%B} {d.day}", "short": f"{d:%b} {d.day}", "iso": d.isoformat()}
+
+
 def main():
     if DIST.exists():
         shutil.rmtree(DIST)
     shutil.copytree(ROOT / "public", DIST)
 
     data = {p.stem: json.loads(p.read_text()) for p in (SRC / "data").glob("*.json")}
+    data["sunday"] = this_sunday()
     layout = (SRC / "layout.html").read_text()
     # Stamp the stylesheet and script with a content hash so browsers never keep a stale copy.
     for asset in ("css/site.css", "js/site.js"):

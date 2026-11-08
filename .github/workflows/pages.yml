@@ -4,6 +4,11 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  # Rebuild early Monday so "This Sunday" moves to the coming Sunday
+  # (00:15 ET in winter, 01:15 ET in summer), and again Saturday as a backstop.
+  schedule:
+    - cron: "15 5 * * 1"
+    - cron: "0 12 * * 6"
   # Redeploy after the sermon bot commits (bot pushes don't trigger push events).
   workflow_run:
     workflows: ["Update sermons", "Update livestream"]
