@@ -889,18 +889,11 @@ h2 em, h3 em { font-style: normal; }
 [data-retreat="winter"] .retreat-page h2 em, [data-retreat="winter"] .retreat-page h3 em { font-weight: inherit; }
 [data-retreat="winter"] .announce { font-family: var(--retreat-type); font-weight: 400; letter-spacing: 0.04em; }
 
-/* The poster's prism, run through the announcement bar: the light band glows at both ends,
-   the copy sits on charcoal in the middle, and a hairline of the spectrum closes the bar. */
+/* The poster's prism as one thin stripe under the charcoal announcement bar */
 [data-retreat="winter"] {
   --prism: #1F3FD1, #1E8FE6, #36D0E0, #F06A9A, #F7A04A, #F4E3C2;
 }
-[data-retreat="winter"] .announce {
-  isolation: isolate; overflow: hidden;
-  background:
-    radial-gradient(ellipse 46% 160% at 50% 50%, var(--retreat-bg) 55%, rgba(27, 28, 28, 0) 100%),
-    linear-gradient(105deg, var(--prism), var(--prism));
-}
 [data-retreat="winter"] .announce::after {
-  content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 2px; z-index: -1;
-  background: linear-gradient(90deg, var(--prism)); opacity: 0.9;
+  content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 2px;
+  background: linear-gradient(90deg, var(--prism));
 }
