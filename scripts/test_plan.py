@@ -34,7 +34,7 @@ PAGES = [
     ("what-we-believe", "What We Believe"),
     ("on-campus", "On Campus"),
     ("student-membership", "Student Membership"),
-    ("fr-26", "Fall Retreat 2026"),
+    ("wr-27", "Winter Retreat 2027"),
     ("events", "Events"),
     ("contact", "Contact"),
     ("donate", "Give"),
@@ -47,7 +47,7 @@ CHECKS = [
     "“This Sunday” shows next Sunday’s date (New York time)",
     "Addresses open Google Maps; Messenger / email / YouTube links work",
     "Latest sermons match the podcast feed",
-    "Fall Retreat section: dates, Register and Schedule & FAQs buttons",
+    "Winter Retreat section: dates, Register and Schedule & FAQs buttons",
     "Phone width: no sideways scrolling, cards stack, buttons are thumb-sized",
     "Footer: addresses, Explore and Connect links",
 ]

@@ -1,6 +1,6 @@
 # Test plan
 
-Generated 2026-10-16 18:29 by `scripts/test_plan.py` from a fresh build.
+Generated 2026-11-08 09:53 by `scripts/test_plan.py` from a fresh build.
 
 ## Automated checks
 
@@ -13,7 +13,7 @@ Generated 2026-10-16 18:29 by `scripts/test_plan.py` from a fresh build.
 - [ ] “This Sunday” shows next Sunday’s date (New York time)
 - [ ] Addresses open Google Maps; Messenger / email / YouTube links work
 - [ ] Latest sermons match the podcast feed
-- [ ] Fall Retreat section: dates, Register and Schedule & FAQs buttons
+- [ ] Winter Retreat section: dates, Register and Schedule & FAQs buttons
 - [ ] Phone width: no sideways scrolling, cards stack, buttons are thumb-sized
 - [ ] Footer: addresses, Explore and Connect links
 
@@ -28,7 +28,7 @@ Generated 2026-10-16 18:29 by `scripts/test_plan.py` from a fresh build.
 | [What We Believe](https://janetcl.github.io/alabaster-site/what-we-believe) | <img src="what-we-believe-desktop.jpg" width="420"> | <img src="what-we-believe-phone.jpg" width="160"> |
 | [On Campus](https://janetcl.github.io/alabaster-site/on-campus) | <img src="on-campus-desktop.jpg" width="420"> | <img src="on-campus-phone.jpg" width="160"> |
 | [Student Membership](https://janetcl.github.io/alabaster-site/student-membership) | <img src="student-membership-desktop.jpg" width="420"> | <img src="student-membership-phone.jpg" width="160"> |
-| [Fall Retreat 2026](https://janetcl.github.io/alabaster-site/fr-26) | <img src="fr-26-desktop.jpg" width="420"> | <img src="fr-26-phone.jpg" width="160"> |
+| [Winter Retreat 2027](https://janetcl.github.io/alabaster-site/wr-27) | <img src="wr-27-desktop.jpg" width="420"> | <img src="wr-27-phone.jpg" width="160"> |
 | [Events](https://janetcl.github.io/alabaster-site/events) | <img src="events-desktop.jpg" width="420"> | <img src="events-phone.jpg" width="160"> |
 | [Contact](https://janetcl.github.io/alabaster-site/contact) | <img src="contact-desktop.jpg" width="420"> | <img src="contact-phone.jpg" width="160"> |
 | [Give](https://janetcl.github.io/alabaster-site/donate) | <img src="donate-desktop.jpg" width="420"> | <img src="donate-phone.jpg" width="160"> |

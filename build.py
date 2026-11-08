@@ -90,6 +90,18 @@ def main():
 
     for page in sorted((SRC / "pages").glob("*.html")):
         meta, body = parse_page(page)
+        if meta.get("redirect"):
+            # An old URL that should land somewhere else (e.g. last season's retreat page).
+            target = meta["redirect"]
+            if target.startswith("/"):
+                target = BASE + target
+            out = DIST / page.stem / "index.html"
+            out.parent.mkdir(parents=True, exist_ok=True)
+            out.write_text(f'<!doctype html><meta charset="utf-8"><title>Moved</title>'
+                           f'<meta http-equiv="refresh" content="0; url={target}"><link rel="canonical" href="{target}">'
+                           f'<p><a href="{target}">This page has moved.</a></p>\n')
+            print(f"built /{page.stem} -> {meta['redirect']}")
+            continue
         ctx = {**data, "header": meta.get("header", "overlay"), **meta}
         ctx["title"] = meta.get("title", "Alabaster Group")
         ctx["description"] = meta.get("description", "A church in New York City and Boston devoted to Jesus Christ.")
