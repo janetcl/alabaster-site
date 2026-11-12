@@ -1,28 +1,35 @@
 {
   "latest": {
-    "title": "Follow Him Closely",
-    "iso": "2026-11-01",
-    "date": "Nov 1",
-    "long": "Sunday, Nov 1",
-    "url": "https://podcasts.apple.com/us/podcast/261101-follow-him-closely/id1704492988?i=1000799536532&uo=4"
+    "title": "Redigging the Wells",
+    "iso": "2026-11-08",
+    "date": "Nov 8",
+    "long": "Sunday, Nov 8",
+    "url": "https://podcasts.apple.com/us/podcast/261108-redigging-the-wells/id1704492988?i=1000800923134&uo=4"
   },
   "earlier": [
+    {
+      "title": "Follow Him Closely",
+      "iso": "2026-11-01",
+      "date": "Nov 1",
+      "long": "Sunday, Nov 1",
+      "url": "https://podcasts.apple.com/us/podcast/261101-follow-him-closely/id1704492988?i=1000799536532&uo=4"
+    },
     {
       "title": "Lean On His Mercy",
       "iso": "2026-10-25",
       "date": "Oct 25",
       "long": "Sunday, Oct 25",
       "url": "https://podcasts.apple.com/us/podcast/261025-lean-on-his-mercy/id1704492988?i=1000798285097&uo=4"
-    },
-    {
-      "title": "Climb the Mountain",
-      "iso": "2026-10-18",
-      "date": "Oct 18",
-      "long": "Sunday, Oct 18",
-      "url": "https://podcasts.apple.com/us/podcast/261018-climb-the-mountain/id1704492988?i=1000797979591&uo=4"
     }
   ],
   "all": [
+    {
+      "title": "Redigging the Wells",
+      "iso": "2026-11-08",
+      "date": "Nov 8",
+      "long": "Sunday, Nov 8",
+      "url": "https://podcasts.apple.com/us/podcast/261108-redigging-the-wells/id1704492988?i=1000800923134&uo=4"
+    },
     {
       "title": "Follow Him Closely",
       "iso": "2026-11-01",
@@ -99,13 +106,6 @@
       "date": "Aug 9",
       "long": "Sunday, Aug 9",
       "url": "https://podcasts.apple.com/us/podcast/260809-write-yourself-into-the-story/id1704492988?i=1000791705513&uo=4"
-    },
-    {
-      "title": "Walk Together",
-      "iso": "2026-08-02",
-      "date": "Aug 2",
-      "long": "Sunday, Aug 2",
-      "url": "https://podcasts.apple.com/us/podcast/260802-walk-together/id1704492988?i=1000790438209&uo=4"
     }
   ]
 }
