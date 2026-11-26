@@ -1,28 +1,35 @@
 {
   "latest": {
-    "title": "The Residual",
-    "iso": "2026-11-15",
-    "date": "Nov 15",
-    "long": "Sunday, Nov 15",
-    "url": "https://podcasts.apple.com/us/podcast/261115-the-residual/id1704492988?i=1000802394925&uo=4"
+    "title": "Total Dominion",
+    "iso": "2026-11-22",
+    "date": "Nov 22",
+    "long": "Sunday, Nov 22",
+    "url": "https://podcasts.apple.com/us/podcast/261122-total-dominion/id1704492988?i=1000804114085&uo=4"
   },
   "earlier": [
+    {
+      "title": "The Residual",
+      "iso": "2026-11-15",
+      "date": "Nov 15",
+      "long": "Sunday, Nov 15",
+      "url": "https://podcasts.apple.com/us/podcast/261115-the-residual/id1704492988?i=1000802394925&uo=4"
+    },
     {
       "title": "Redigging the Wells",
       "iso": "2026-11-08",
       "date": "Nov 8",
       "long": "Sunday, Nov 8",
       "url": "https://podcasts.apple.com/us/podcast/261108-redigging-the-wells/id1704492988?i=1000800923134&uo=4"
-    },
-    {
-      "title": "Follow Him Closely",
-      "iso": "2026-11-01",
-      "date": "Nov 1",
-      "long": "Sunday, Nov 1",
-      "url": "https://podcasts.apple.com/us/podcast/261101-follow-him-closely/id1704492988?i=1000799536532&uo=4"
     }
   ],
   "all": [
+    {
+      "title": "Total Dominion",
+      "iso": "2026-11-22",
+      "date": "Nov 22",
+      "long": "Sunday, Nov 22",
+      "url": "https://podcasts.apple.com/us/podcast/261122-total-dominion/id1704492988?i=1000804114085&uo=4"
+    },
     {
       "title": "The Residual",
       "iso": "2026-11-15",
@@ -99,13 +106,6 @@
       "date": "Sep 6",
       "long": "Sunday, Sep 6",
       "url": "https://podcasts.apple.com/us/podcast/260906-your-sins-are-forgiven/id1704492988?i=1000794557513&uo=4"
-    },
-    {
-      "title": "Who Are My Brothers",
-      "iso": "2026-08-30",
-      "date": "Aug 30",
-      "long": "Sunday, Aug 30",
-      "url": "https://podcasts.apple.com/us/podcast/260830-who-are-my-brothers/id1704492988?i=1000791951417&uo=4"
     }
   ]
 }
